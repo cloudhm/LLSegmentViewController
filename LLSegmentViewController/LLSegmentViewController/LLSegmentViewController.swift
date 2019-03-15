@@ -154,13 +154,13 @@ extension LLSegmentViewController{
 }
 
 extension LLSegmentViewController :LLContainerScrollViewDagDelegate{
-    public func scrollView(scrollView: LLContainerScrollView, dragTop offsetY: CGFloat) {
+    open func scrollView(scrollView: LLContainerScrollView, dragTop offsetY: CGFloat) {
     }
     
-    public func scrollView(scrollView: LLContainerScrollView, dragToMinimumHeight progress: CGFloat) {
+    open func scrollView(scrollView: LLContainerScrollView, dragToMinimumHeight progress: CGFloat) {
     }
 
-    public func scrollView(scrollView: LLContainerScrollView, shouldScrollWithSubView subView: UIScrollView) -> Bool {
+    open func scrollView(scrollView: LLContainerScrollView, shouldScrollWithSubView subView: UIScrollView) -> Bool {
         if subView == pageView {
             return false
         }
