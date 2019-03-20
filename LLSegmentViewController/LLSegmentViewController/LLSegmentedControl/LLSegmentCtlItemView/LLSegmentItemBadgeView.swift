@@ -40,12 +40,12 @@ open class LLSegmentItemBadgeView: LLSegmentBaseItemView {
     
     open weak var associateViewCtl:UIViewController? {
         didSet{
-            associateViewCtl?.tabBarItem.addObserver(self, forKeyPath: badgeValueObserverKeyPath, options: [.new], context: nil)
+//            associateViewCtl?.tabBarItem.addObserver(self, forKeyPath: badgeValueObserverKeyPath, options: [.new], context: nil)
         }
     }
 
     deinit {
-        associateViewCtl?.tabBarItem.removeObserver(self, forKeyPath: badgeValueObserverKeyPath)
+//        associateViewCtl?.tabBarItem.removeObserver(self, forKeyPath: badgeValueObserverKeyPath)
     }
     
     open override func setSegmentItemViewStyle(itemViewStyle: LLSegmentItemViewStyle) {
